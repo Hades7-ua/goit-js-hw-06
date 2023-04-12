@@ -15,6 +15,9 @@ const images = [
 
 const newImageGalery = document.querySelector("ul");
 
+newImageGalery.style.display = "flex";
+newImageGalery.style.gap = "8px";
+
 const listImage = images
   .map(
     ({ url, alt }) => `<li><img src ="${url}" alt="${alt}" width = 480px></li>`
